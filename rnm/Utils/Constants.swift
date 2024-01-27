@@ -11,4 +11,5 @@ struct Constants {
     static let textNormal: CGFloat = 14.0
     static let textMedium: CGFloat = 16.0
     static let textLarge: CGFloat = 18.0
+    static let textTitle: CGFloat = 28.0
 }

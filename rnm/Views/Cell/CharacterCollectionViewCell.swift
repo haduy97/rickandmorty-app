@@ -93,10 +93,12 @@ final class CharacterCollectionViewCell: UICollectionViewCell {
         viewModel.getImg { [weak self] rs in
             switch rs {
             case .success(let data):
+                let image = UIImage(data: data)
+               
                 DispatchQueue.main.async {
-                    let image = UIImage(data: data)
                     self?.imageView.image = image
                 }
+                
             case .failure(let error):
                 print(error.localizedDescription)
                 break

@@ -8,7 +8,7 @@
 import UIKit
 import SnapKit
 
-final class CharactersViewController: BaseViewController {
+final class CharactersViewController: UIViewController {
     private let charactersListView = CharactersListView(frame: .zero)
 
     override func viewDidLoad() {
